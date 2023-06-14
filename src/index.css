@@ -1,13 +1,181 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  background-color: #17161e;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  overflow: hidden;
+}
+
+.Header_containerButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.Header_buttonSelected {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 4px solid #471bbe;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Header_buttonSelect {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+.Header_buttonLogin {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  border: 4px solid #471bbe;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.VideoSession_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0e15;
+  padding: 20px;
+}
+
+.VideoSession_text {
+  text-align: center;
+}
+
+.VideoSession_text h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #00b8e6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.VideoSession_text h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 184, 230, 0.8);
+}
+
+.VideoSession_text h2 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #471bbe;
+}
+
+.VideoSession_text p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.PriceTable_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.PriceTable {
+  background-color: #17161e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.PriceTable h4 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.PriceTable_row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.PriceTable_item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.PriceTable_item h5 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.PriceTable_item p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.PriceTable_item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.PriceTable_item li {
+  margin-bottom: 5px;
+}
+
+.PriceTable_buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.PriceTable_button {
+  color: #ffffff;
+  background-color: #471bbe;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.VideoSession_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.VideoSession_player {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.VideoSession_player iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .VideoSession_video {
+    flex-direction: column;
+  }
 }

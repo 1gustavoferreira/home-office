@@ -1,38 +1,186 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #17161e;
+  color: #ffffff;
+}
+
 .App {
+  overflow: hidden;
+}
+
+.Header_containerButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.Header_buttonSelected {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 4px solid #471bbe;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Header_buttonSelect {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+.Header_buttonLogin {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  border: 4px solid #471bbe;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.VideoSession_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0e15;
+  padding: 20px;
+}
+
+.VideoSession_text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.VideoSession_text h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #471bbe;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.VideoSession_text h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 184, 230, 0.8);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.VideoSession_text h2 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #471bbe;
+}
+
+.VideoSession_text p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.PriceTable_container {
+  margin-top: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.PriceTable {
+  background-color: #17161e;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.PriceTable h4 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.PriceTable_row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.PriceTable_item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.PriceTable_item h5 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.PriceTable_item p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.PriceTable_item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.PriceTable_item li {
+  margin-bottom: 5px;
+}
+
+.PriceTable_buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.PriceTable_button {
+  color: #ffffff;
+  background-color: #471bbe;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.VideoSession_video {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.VideoSession_player {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.VideoSession_player iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .VideoSession_text {
+    margin: 0 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .VideoSession_player {
+    max-width: 100%;
   }
 }
